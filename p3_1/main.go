@@ -21,14 +21,17 @@ func main() {
 
 	var treeFound int = 0
 
-	for _, treeLine := range treeMap {
-		if strings.Contains(treeLine, "#") {
+	mapPosition := 0
+	modBase := len(treeMap[0])
+	for i := 0; i < len(treeMap); i++ {
+		if strings.Compare(string(treeMap[i][mapPosition%modBase]), "#") == 0 {
 			treeFound++
 		}
+		// fmt.Printf("Line: %d - Pos: %d - PosMOD: %d - byte: %v\n", i, mapPosition, mapPosition%modBase, treeMap[i][mapPosition%modBase])
+		mapPosition = mapPosition + 3
 	}
 
 	fmt.Printf("Trees found for p3_1: %d\n", treeFound)
-
 }
 
 func getTreeMap(r io.Reader) ([]string, error) {
