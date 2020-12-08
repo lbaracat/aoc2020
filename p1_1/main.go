@@ -21,7 +21,7 @@ func main() {
 	for i := 0; i < len(expense)-1; i++ {
 		for j := i + 1; j < len(expense); j++ {
 			if (expense[i] + expense[j]) == 2020 {
-				log.Printf("Pairs (%d %d) - p1 answers is %d", expense[i], expense[j], expense[i]*expense[j])
+				log.Printf("Pairs (%d %d) - p1_1 answers is %d", expense[i], expense[j], expense[i]*expense[j])
 			}
 		}
 	}
