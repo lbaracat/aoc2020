@@ -1,0 +1,24 @@
+The problem now is finding missing number in a sequence.
+
+Run:
+
+for binary in $(sed s/F/0/g input.txt | sed s/B/1/g | sed s/L/0/g | sed s/R/1/g | sort ); do echo "$((2#${binary}))"; done > 0Dinput.txt
+
+gives me the input.txt file converted to ID seats, sorted.
+
+The problem said that's only one is missing. Some seats from back and front too. But I seated "between" two people - aka existing <myID-1> and <nyID+1>.
+
+Take from the above list, the first and last numbers. Run:
+
+seq 6 1 933 > true0D.txt
+
+Will build an entire list - including my missing ID.
+
+And finally:
+
+diff <list of flightIDs> <list of all possible flightIDs>
+
+diff 0Dinput.txt true0D.txt
+705a706
+> 711
+

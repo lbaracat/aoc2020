@@ -1,0 +1,28 @@
+The problem - and the input file - is a binary list of numbers.
+
+128 rows == 2⁷
+8 columns == 2³
+
+Multiplying rows by 8 is left shifting by 3.
+
+It's a bynary of 2¹⁰.
+
+Sort the file, take the greatest and convert to decimal.
+
+F is 0. B is 1.
+L is 0. R is 1.
+
+`sort -r input.txt | tail`  gives me the last lines...
+
+BBBFFBBLRR
+BBBFFBBLRL
+BBBFFBBLLR
+BBBFFBBLLL
+BBBFBFFRLR
+BBBFBFFRLL
+BBBFBFFLRR
+BBBFBFFLRL
+BBBFBFFLLR
+BBBFBFFLLL
+
+The answers is BBBFBFFRLR. 0b1110100101 is 933
