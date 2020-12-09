@@ -16,4 +16,4 @@
  - Puzzle 1, first time using bufio.Scanner()
  - Puzzle 2, seems my parsing method was NOT the best way to solve. But worked.
  - I cheated Puzzle 3, part 2. Hard coded each slope and did the mult manually, thanks to Starship launch (scrub).
- - Puzzle 4, very time consuming code. Lots of details / validations. Pays off my passport struct strategy.
+ - Puzzle 4, very time consuming code. Lots of details / validations. My passport struct strategy pays off.
