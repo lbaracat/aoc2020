@@ -9,6 +9,7 @@
 | 3 | 50 | 0 |
 | 4 | 300 | 0 |
 | 5 | 10 | -1 |
+| 6 | 400 | 2 |
 
  - Difficulty level, from 0 (super easy) to 10 (insane)
  - Approx time in minutes taken to solve entire day (2 puzzles per day until now)
@@ -19,3 +20,4 @@
  - I cheated Puzzle 3, part 2. Hard coded each slope and did the mult manually, thanks to Starship launch (scrub).
  - Puzzle 4, very time consuming code. Lots of details / validations. My passport struct strategy pays off.
  - Puzzle 5 was super super easy. No code needed, just some scripts.
+ - Made a mistakes on puzzle 6 part 2. Silly error, that took too long to find out - Not clearing a temp var each time.
